@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:post_app/features/posts/presentation/pages/post_detail_page.dart';
 
 import '../../../domain/entities/post.dart';
 
@@ -26,7 +27,13 @@ class PostListWidget extends StatelessWidget {
               ),
             ),
             contentPadding: EdgeInsets.symmetric(horizontal: 10),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => PostDetailPage(post: posts[index]),
+                  ));
+            },
           );
         },
         separatorBuilder: (context, index) {

@@ -5,13 +5,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: ^3.6.0
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.6
+  cupertino_icons: ^1.0.8
   #bloc for state management
   bloc: ^8.1.4
   flutter_bloc: ^8.1.2
@@ -24,14 +24,14 @@ dependencies:
   #Remote Api
   internet_connection_checker: ^1.0.0+1
   http: ^1.2.2
+  shared_preferences: ^2.0.15
   #Local cache
-  shared_preferences: ^2.3.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^5.0.0
 
 
 flutter:

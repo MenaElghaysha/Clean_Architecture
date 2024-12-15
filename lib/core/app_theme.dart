@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 final primaryColor = Color(0xff082659);
 final secondaryColor = Color(0xff51eec2);
-
 final appTheme = ThemeData(
     appBarTheme: AppBarTheme(
       backgroundColor: primaryColor,
@@ -23,6 +22,7 @@ final appTheme = ThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all<Color>(primaryColor), // Set background color
         foregroundColor: WidgetStateProperty.all<Color>(Colors.white), // Set text color
+        iconColor: WidgetStateProperty.all<Color>(Colors.white),
         shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8), // Set button shape

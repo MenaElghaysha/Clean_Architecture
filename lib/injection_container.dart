@@ -12,7 +12,6 @@ import 'package:post_app/features/posts/domain/usercases/update_post.dart';
 import 'package:post_app/features/posts/presentation/bloc/add_delete_update_post/add_delete_update_bloc.dart';
 import 'package:post_app/features/posts/presentation/bloc/posts/posts_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'features/posts/data/datasorces/post_local_data_sourca.dart';
 
 final sl = GetIt.instance;

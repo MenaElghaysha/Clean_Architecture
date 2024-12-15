@@ -62,16 +62,7 @@ class PostsRepoImpl implements PostRepo {
 
   @override
   Future<Either<Failure, Unit>> deletePost(int postId) async {
-    // if (await networkInfo.isConnected) {
-    //   try {
-    //     await remoteDataSource.deletePost(postId);
-    //     return right(unit);
-    //   } on ServerException {
-    //     return Left(ServerFailure());
-    //   }
-    // } else {
-    //   return Left(OfflineFailure());
-    // }
+
 
     return await _getMessage(() {
       return remoteDataSource.deletePost(postId);
